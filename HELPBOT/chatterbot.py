@@ -67,6 +67,10 @@ print(my_bot.get_response("Do you know the law of cosines?"))
 print(my_bot.get_response("Show me the pythorean theorem"))
 
 
-
-
-
+while True:
+try:
+    bot_input=input("you:")
+    bot_response=bot.get_response(bot_input)
+print(f"{my_bot.name}:{bot_response}")
+except(KeyboardInterrupt,EOFError,SystemExit):
+    break;
